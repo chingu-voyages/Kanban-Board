@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  
+}
+
+.homepage{
+  height: 100vh;
+  width: 100vw;
 }
 
 .leftpanel{
@@ -10,6 +15,8 @@
   width: 18%;
  background-color:  #33334d;
  overflow: hidden;
+ position: absolute;
+ z-index: 2;
 }
 
 .title{
@@ -69,10 +76,10 @@
 .top_panel{
   background-color:  #33334d;
   height: 17%;
-  width: 90vw;
+  width: 100vw;
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 0px;
   z-index: 1;
   overflow: hidden;
 }
@@ -81,7 +88,7 @@
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: absolute;
-  left: 118px;
+  left: 315px;
   top: 39px;
   font-size: 30px;
 }
@@ -196,12 +203,14 @@
   
   background-color:  	#22262a;
   height: 100vh;
-  width: 82.5vw;
+  width: 100vw;
   position: absolute;
-  z-index: 1;
-  top: 121px;
-  left: 274px;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
   padding: 10px;
+  overflow: hidden;
+  
 }
 
 .kanban-board{
@@ -209,14 +218,18 @@
   display: flex;
   justify-content: space-between;
   font-family: sans-serif;
+  position: absolute;
+  top: 180px;
+  left: 400px;
 }
 
 .kanban-block,
 .create-new-task-block {
+  margin-right: 50px;
   padding: 0.6rem;
-  width: 30.5%;
-  min-width: 14rem;
-  min-height: 4.5rem;
+  width: 50.5%;
+  min-width: 20rem;
+  height: 200px;
   border-radius: 0.3rem;
 }
 
@@ -233,6 +246,7 @@
   background-image: -ms-linear-gradient(top, #6824de, #a07fcf);
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
+  overflow-y: auto;
 }
 
 #inprogress {
@@ -271,9 +285,9 @@
   justify-content: space-between;
   background-color: #2e2144;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-70%);
+  top: 90%;
+  left: 40%;
+  transform: translate(-50%,-50%);
   height: 400px;
   width: 600px;
   border: 1px solid white;
