@@ -116,34 +116,52 @@
   text-decoration: none;
 }
 
-.kebab{
-  height: 40px;
-  width: 45px;
-  border-style: none;
-  text-decoration: none;
-  position: absolute;
-  right: 80px;
-  top: 37px;
+#kebab{
   cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 83px;
+}
+
+#kebab div{
+  width: 35px;
+  height: 5px;
+  background-color:rgb(135, 100, 217);
+  margin: 6px 0;
 }
 
 #myDropdown{
+  display: none;
+  flex-direction: column;
   background-color: rgb(135, 100, 217);
   color: white;
   height: 37px;
-  width: 60px;
+  width: 80px;
   position: absolute;
   top:80px;
   right: 120px;
  
 }
 
+#myDropdown span{
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  width: 10px;
+}
+
+#myDropdown span:hover{
+  background-color: #3498db;
+}
+
 #myDropdown a{
-  
+  margin-left: 0;
   text-decoration: none;
   color: white;
   text-align: left;
-  padding: 2px;
+  width: 45px;
+  cursor: pointer;
 }
 
 #myDropdown a:hover{
@@ -255,9 +273,22 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-70%);
   height: 400px;
   width: 600px;
+  border: 1px solid white;
+  
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+  
 }
 
 
