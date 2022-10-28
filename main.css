@@ -334,5 +334,13 @@
 }
 
 
+.hold{
+  border: solid palevioletred 2px;
+}
+
+.taskhide{
+  display: none;
+}
+
 
  
