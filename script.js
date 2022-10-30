@@ -57,3 +57,50 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.currentTarget.appendChild(document.getElementById(data));
 }
+function pushData()
+ {
+    var new_field=[];
+     // get value from the input text
+     var status_option = document.getElementById('task-status').value;
+     var task_name = document.getElementById('task-name').value;
+     
+     // append data to the array
+     new_field.push(task_name);
+     
+    
+     
+     for(i = 0; i < new_field.length; i++)
+     {
+         
+         const el = document.createElement('div');
+         el.setAttribute("class","task");
+         el.setAttribute("disabled", "");
+         el.setAttribute("draggable","true");
+         /*el.setAttribute("ondragstart","drag(Event)");
+        el.ondragstart=drag;*/
+        el.addEventListener("dragstart",drag);
+
+         el.textContent = new_field[i];
+         if(status_option.localeCompare("todo")==0)
+         {
+            const box = document.getElementById('todo');
+            box.appendChild(el); 
+         }
+         else if(status_option.localeCompare("inprogress")==0)
+         {
+            const box = document.getElementById('inprogress');
+            box.appendChild(el);
+         }
+         else
+         {
+            const box = document.getElementById('done');
+            box.appendChild(el);
+         }
+        // append data to the array
+     }
+     var m;
+
+     m=document.getElementById("overlay").style.display="none";
+     
+     
+ }   
