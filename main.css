@@ -256,6 +256,7 @@
   background-image: -ms-linear-gradient(top, #6824de, #a07fcf);
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
+  overflow-y: auto;
   /* display: none; */
 }
 
@@ -266,6 +267,7 @@
   background-image: -ms-linear-gradient(top, #6824de, #a07fcf);
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
+  overflow-y: auto;
   /* display: none; */
 }
 
