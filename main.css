@@ -257,6 +257,7 @@
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
   /* display: none; */
+  overflow-y: auto;
 }
 
 #done {
@@ -267,6 +268,7 @@
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
   /* display: none; */
+  overflow-y: auto;
 }
 
 .task {
