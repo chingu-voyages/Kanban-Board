@@ -79,6 +79,7 @@ function pushData()
      var task_name = document.getElementById('task-name').value;
      // append data to the array
      new_field.push(task_name);
+     
      if((task_name.localeCompare("")!=0)&&(status_option.localeCompare("")!=0))
     {for(i = 0; i < new_field.length; i++)
      {
