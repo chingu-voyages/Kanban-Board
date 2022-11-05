@@ -14,11 +14,14 @@
     <img src="images/logo.png" alt="" class="logo">
     <div class="title"> Kanban </div>
     <div class="allboards">All Boards</div>
-    <ul class="tasklist">
+    <ul class="tasklist" id="tasklist">
       <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Website Making</li>
       <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Roadmap</li>
       <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
+      <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
     </ul>
+    <!--ADD NEW BOARD FEATURE
+    <button class="add_new_board" onclick="Show_board()">+ Add New Board</button>-->
   </div>
 
   <div class="horizontal">
@@ -92,13 +95,14 @@
           <strong>Done</strong>
       </div>
 
-      <div id="overlay">
+      
+      <form id="overlay">
         <div  id="create-new-task-block">
             <strong>New Task</strong>
     
             <span class="form-row">
-                <label class="form-row-label" for="task-name">Task</label>
-                <input class="form-row-input" type="text" name="task-name" id="task-name">
+                <label class="form-row-label" for="task-name" >Task</label>
+                <input class="form-row-input" type="text" name="task-name" id="task-name" required/>
             </span>
             
             <span class="form-row">
@@ -107,21 +111,41 @@
             </span>
             <span class="form-row">
                 <label class="form-row-label" for="task-name">Status</label>
-                <select class="form-row-input" name="task-status" id="task-status">
+                <select class="form-row-input" name="task-status" id="task-status" required>
+                    
+                    <option value="" disabled selected hidden>Please select</option>
                     <option value="todo">To Do</option>
                     <option value="inprogress">In Progress</option>
                     <option value="done">Done</option>
                 </select>
             </span>
             <span class="form-row-buttons">
-                <button id="edit-button" onclick="editTask()">Edit</span>
+                <button id="edit-button" onclick="editTask();">Clear</span>
                 <button id="save-button" onclick="pushData();">Save</span>
                 <button id="cancel-button" onclick="Hide()">Cancel</span>
             </span>
         </div>
-      </div>
+    </form>
 
-  </div>
+    <!--ADD NEW BOARD 
+        <form id="overlay">
+        <div  id="create-new-board">
+            <strong style="position:relative; left: 19vw;">New Board</strong>
+    
+            <span class="form-row">
+                <label class="form-row-label" for="board-name" style="position:relative; left: 11vw;">Board name</label>
+                <input class="form-row-input" type="text" name="board-name" id="board-name" style="position:relative; left: 11vw;" required/>
+            </span>
+            <br>
+            <span class="form-row-buttons">
+                <button id="edit-button" onclick="editBoard();">Clear</span>
+                    <button id="save-button" onclick="pushBoard();">Save</span>
+                    <button id="cancel-button" onclick="HideBoard()">Cancel</span>
+            </span>
+            </div>
+    </form>-->
+
+</div>
  </div>
 
 </body>
