@@ -74,15 +74,15 @@ function createTask(){
 }
 
 function saveTask(){
-    var saveButton = document.getElementById("save-button");
-    var editButton = document.getElementById("edit-button");
-    if (saveButton.style.display === "none") {
-        saveButton.style.display = "block";
-        editButton.style.display = "none";
-    } else{
-        saveButton.style.display = "none";
-        editButton.style.display = "block";
-    }
+    // var saveButton = document.getElementById("save-button");
+    // var editButton = document.getElementById("edit-button");
+    // if (saveButton.style.display === "none") {
+    //     saveButton.style.display = "block";
+    //     editButton.style.display = "none";
+    // } else{
+    //     saveButton.style.display = "none";
+    //     editButton.style.display = "block";
+    // }
 
     var todo = document.getElementById("todo");
     var taskName = document.getElementById("task-name").value;
