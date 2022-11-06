@@ -252,3 +252,29 @@ y=document.getElementById("overlay").style.display="none";
     </div>
     `
 }*/
+
+
+// Changing name of the board
+
+function openchangetitle(){
+    var x ;
+    
+    x=document.getElementById("changename").style.display="flex";
+    // x=document.getElementById("overlay").style.display="block";
+}
+
+function closechangetitle(){
+    var x ;
+    
+    x=document.getElementById("changename").style.display="none";
+    // x=document.getElementById("overlay").style.display="block";
+}
+
+
+const txt1= document.getElementById('changetitle');
+
+const title1= document.getElementById('task_title');
+
+function newchange(){
+  title1.innerHTML=txt1.value;
+}
