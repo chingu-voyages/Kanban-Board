@@ -24,16 +24,17 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: absolute;
   left:7vw;
-  top: 3.5vw;
-  font-size: 2.5vw;
+  top: 7.5vh;
+  font-size: min(2.5vw,5vh);
 }
 
 .logo{
   position: absolute;
   left: 2vw;
-  top: 5.5vh;
-  height: 4vw;
-  width: 4vw;
+  top: 6vh;
+  height: min(5vw,9vh);
+  width: min(5vw,9vh);
+
 }
 
 .allboards{
@@ -90,7 +91,7 @@
   position: absolute;
   left: 24.8vw;
   top: 8vh;
-  font-size: 2.3vw;
+  font-size: min(2.3vw,5vh);
 }
 
 .add {
@@ -101,15 +102,16 @@
   background-image: -o-linear-gradient(top, #6824de, #a07fcf);
   background-image: linear-gradient(to bottom, #6824de, #a07fcf);
   border-style: none;
-  border-radius: 28px;
+  border-radius: 5vw;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.5vw;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   position: absolute;
   right: 10vw;
   top: 7vh;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
@@ -160,8 +162,8 @@
 }
 
 #kebab div{
-  width: 35px;
-  height: 5px;
+  width: 2.8vw;
+  height: 0.4vw;
   background-color:rgb(135, 100, 217);
   margin: 6px 0;
 }
@@ -171,11 +173,12 @@
   flex-direction: column;
   background-color: rgb(135, 100, 217);
   color: white;
-  height: 37px;
-  width: 80px;
+  height: min(1.8vw,4vh);
+  width: 7vw;
   position: absolute;
-  top:80px;
-  right: 120px;
+  top:0vh;
+  right: 6vw;
+  font-size:min(1.4vw,4vh);
  
 }
 
@@ -183,8 +186,9 @@
   cursor: pointer;
   position: absolute;
   top: 0px;
-  right: 1px;
-  width: 10px;
+  right: 0.5vw;
+  
+  font-size:min(1.4vw,4vh);
 }
 
 #myDropdown span:hover{
@@ -196,7 +200,7 @@
   text-decoration: none;
   color: white;
   text-align: left;
-  width: 45px;
+  
   cursor: pointer;
 }
 
@@ -255,6 +259,13 @@
   margin-right: 1vw;
   
  
+}
+@media (max-width: 800px) {
+  .kanban-board{
+    flex-direction: column;
+    row-gap: 8vh;
+    align-items: center;
+  }
 }
 
 .kanban-block,
@@ -315,6 +326,7 @@
   border: 0.1rem solid black;
   border-radius: 10px;
   padding: 0.5rem 0.2rem 0.5rem 2rem;
+  
 }
 #task-description{
   width:45vw;
@@ -328,12 +340,13 @@
   justify-content: space-between;
   background-color: #2e2144;
   position: absolute;
-  top: 90%;
+  top:22vh;
   left: 48%;
   transform: translate(-50%,-50%);
   height: 72vh;
   width: 48vw;
   border: 1px solid white;
+ 
   
 }
 /*ADD NEW BOARD
@@ -430,8 +443,8 @@
   width: 200px;
   background-color: #4f3b6c;
   position: absolute;
-  top: 90%;
-  left: 48%;
+  top: 0vh;
+  left: 38vw;
   transform: translate(-50%,-50%);
   border: 1px solid rgb(238, 230, 230);
 }
@@ -468,6 +481,29 @@
   right: 10px;;
   cursor: pointer;
 }
+
+/*.closebutton1{
+  height: 1.4vw;
+  width: 1.4vw;
+  /*position: relative;
+  left:15vw;
+  bottom:1.2vh;
+}
+
+.closebutton1{
+  height: 1vw;
+  width: 1.1vw;
+  position: relative;
+  margin: 0%;
+}*/
+.closebutton2{
+  height: 1.4vw;
+  width: 1.4vw;
+  float: right;
+  cursor: pointer;
+  
+}
+
 
 
  
