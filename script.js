@@ -12,11 +12,21 @@ function Show_board(){
     x=document.getElementById("overlay").style.display="block";
 }*/
 function Hide(){
+    var x;
+         x=document.getElementById('task-name').value = '';
+         x=document.getElementById('task-description').value = '';
+         x=document.getElementById('task-status').value = '';
     var y ;
     
     y=document.getElementById("create-new-task-block").style.display="none";
     y=document.getElementById("overlay").style.display="none";
 }
+function delete_task(el){
+   /*var divId = document.getElementById('todo');*/
+    var childId = document.getElementById(el); 
+		/*divId.removeChild(childId);*/
+        childId.parentNode.removeChild(childId);
+      }
 /*ADD NEW BOARD
 function HideBoard(){
     var y ;
@@ -38,6 +48,9 @@ function closemenu(){
 
     m=document.getElementById("myDropdown").style.display="none";
 }
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
 
 
 // const dragtask = document.querySelector('.task');
@@ -58,9 +71,7 @@ function closemenu(){
 //     });
 // }
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
+
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -95,6 +106,7 @@ function pushData()
             var taskName = document.getElementById("task-name").value;
             todo.innerHTML += `<div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
                 <span>${taskName}</span>
+                <img src="images/closebutton.png" class="closebutton2" id="${taskName.toLowerCase().split(" ").join("")}" onclick="delete_task(this.id)">
             </div>
             `
              
@@ -105,6 +117,7 @@ function pushData()
             var taskName = document.getElementById("task-name").value;
             inprogress.innerHTML += `<div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
                 <span>${taskName}</span>
+                <img src="images/closebutton.png" class="closebutton2" id="${taskName.toLowerCase().split(" ").join("")}" onclick="delete_task(this.id)">
             </div>
             `
          }
@@ -114,6 +127,7 @@ function pushData()
             var taskName = document.getElementById("task-name").value;
             done.innerHTML += `<div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
                 <span>${taskName}</span>
+                <img src="images/closebutton.png" class="closebutton2" id="${taskName.toLowerCase().split(" ").join("")}" onclick="delete_task(this.id)">
             </div>
             `
          }
@@ -277,4 +291,8 @@ const title1= document.getElementById('task_title');
 
 function newchange(){
   title1.innerHTML=txt1.value;
+  var x ;
+x=document.getElementById("changename").style.display="none";
+x=document.getElementById("myDropdown").style.display="none";
+  // x=document.getElementById("overlay").style.display="block";
 }
