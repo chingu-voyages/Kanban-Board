@@ -39,32 +39,33 @@
 
 .allboards{
     position: absolute;
-    left: 40px;
-    top: 140px;
+    left: 4vw;
+    top: 26vh;
     opacity: 0.8;
-    font-size: 20px;
+    font-size:min(1.8vw,5.5vh);
     color: #a07fcf;
 }
 
 .tasklogo{
-  height: 20px;
-  width: 20px;
-  padding: 3px;
+  height:min(1.7vw,5.2vh);
+  width:min(1.7vw,5.2vh);
+ 
+  padding:0.4vw;
 }
 
 .tasklist{
   list-style: none;
   text-align: left;
   position: relative;
-  top: 200px;
-  padding: 10px;
+  top: 35vh;
+  padding:1vw;
 }
 
 .tasklist li{
   color: white;
-  padding: 10px;
-  margin-left: 10px;
-  font-size: 20px;
+  padding:1.3vh;
+  margin-left:1vw;
+  font-size: min(1.5vw,5.2vh);
   display: flex;
   cursor: pointer;
 }
@@ -72,6 +73,7 @@
 .tasklist li:hover{
   background-color: #a07fcf;
   border-radius: 5px;
+  left:2vw;
 }
 
 .top_panel{
@@ -360,7 +362,7 @@
   top:22vh;
   left: 48%;
   transform: translate(-50%,-50%);
-  height: 72vh;
+  min-height: 72vh;
   width: 48vw;
   border: 1px solid white;
  
@@ -416,6 +418,7 @@
 #create-new-task-block strong, label{
   color: white;
   padding: 20px;
+  font-size: min(1.3vw,5.1vh);
 }
 /* ADD NEW BOARD
 #create-new-board strong, label{
