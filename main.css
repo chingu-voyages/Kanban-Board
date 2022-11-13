@@ -364,7 +364,7 @@
     display: none;
   
 }*/
-.overlay{
+#overlay{
   height:auto;
   width: 50%;
   position: absolute;
@@ -372,7 +372,7 @@
   left:20vw;
   /*left: auto;*/
   background: rgba(0,0,0,0.6);
-  display: none;
+  /* display: none; */
 
 }
 
@@ -472,3 +472,22 @@
 
  
 
+#overlay2{
+  height:100vh;
+  width: 100vw;
+  position: absolute;
+  
+  /*left: auto;*/
+  background: rgba(0,0,0,0.6);
+  /* display: none; */
+
+} 
+
+@media screen and (max-width: 600px){
+  .leftpanel{
+    display: none;
+  }
+  .box{
+    width: 100vw;
+  }
+}

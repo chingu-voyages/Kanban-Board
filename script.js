@@ -260,7 +260,7 @@ function openchangetitle(){
     var x ;
     
     x=document.getElementById("changename").style.display="flex";
-    // x=document.getElementById("overlay").style.display="block";
+    x=document.getElementById("overlay2").style.display="block";
 }
 
 function closechangetitle(){
