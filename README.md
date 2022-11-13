@@ -1,6 +1,6 @@
 # _Kanban Board_
 
-#### By _ FasnaSharaf and anna-197 _
+#### By _{FasnaSharaf and anna-197}_
 
 #### _{This project is a simple implementation of Kanban Board, a tool that helps in managing tasks easily}_
 
