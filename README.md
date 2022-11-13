@@ -19,6 +19,7 @@ This allows users to
 * Create tasks.
 * Categorize them according to their status through drag and drop.
 * Save the tasks.
+* Delete tasks if needed.
 * Change the name of their board as well.
 
 ## Setup/Installation Requirements
