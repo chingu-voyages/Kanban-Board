@@ -1,14 +1,30 @@
-# voyage-tasks
+# _Kanban Board_
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+#### By _{FasnaSharaf and anna-197}_
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+#### _{This project is a simple implementation of Kanban Board, a tool that helps in managing tasks easily}_
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+## Technologies Used
 
-> Own it & Make it your Own!
+* _HTML_
+* _CSS_
+* _Vanilla JS_
+
+
+## Description
+
+This allows users to 
+
+* Create tasks.
+* Categorize them according to their status through drag and drop.
+* Save the tasks.
+* Change the name of their board as well.
+
+## Setup/Installation Requirements
+
+* Clone this repository and start live server.
+* Click on this link: 
+
+
+
+
