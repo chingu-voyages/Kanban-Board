@@ -1,6 +1,6 @@
-# _{Kanban Board}_
+# _Kanban Board_
 
-#### By _**{List of contributors}**_
+#### By _** FasnaSharaf and anna-197 **_
 
 #### _{This project is a simple implementation of Kanban Board, a tool that helps in managing tasks easily}_
 
@@ -13,12 +13,17 @@
 
 ## Description
 
-_{This allows users to create tasks, categorize them according to their status through drag and drop and save the tasks. Users can change the name of their board as well.}_
+_This allows users to 
+
+* Create tasks.
+* Categorize them according to their status through drag and drop.
+* Save the tasks.
+* Change the name of their board as well.
 
 ## Setup/Installation Requirements
 
-* _Clone this repository and start live server _
-* _Click on this link: _
+* Clone this repository and start live server.
+* Click on this link: 
 
 
 
