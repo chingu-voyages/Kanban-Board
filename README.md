@@ -2,7 +2,7 @@
 
 #### By _**{List of contributors}**_
 
-#### _{This project is a simple implementation of Kanban Board, a tool that help in managing tasks}_
+#### _{This project is a simple implementation of Kanban Board, a tool that helps in managing tasks easily}_
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_{This allows users to create tasks, categorize them according to their status through drag and drop and save the tasks.}_
+_{This allows users to create tasks, categorize them according to their status through drag and drop and save the tasks. Users can change the name of their board as well.}_
 
 ## Setup/Installation Requirements
 
