@@ -1,16 +1,31 @@
-function Show(){
-    var x ;
-    
-    x=document.getElementById("create-new-task-block").style.display="flex";
-    x=document.getElementById("overlay").style.display="block";
-}
-/*ADD NEW BOARD
+/*ADD NEW BOARD*/
 function Show_board(){
     var x ;
     
     x=document.getElementById("create-new-board").style.display="flex";
-    x=document.getElementById("overlay").style.display="block";
-}*/
+    x=document.getElementById("overlay1").style.display="block";
+}
+function HideBoard(){
+  var y ;
+  
+  y=document.getElementById("create-new-board").style.display="none";
+  y=document.getElementById("overlay1").style.display="none";
+
+}
+ function editBoard(){
+  var y;
+  y=document.getElementById('board-name').value = '';
+  
+}
+/*.....................*/
+
+/* ADD NEW TASK*/
+function Show(){
+  var x ;
+  
+  x=document.getElementById("create-new-task-block").style.display="flex";
+  x=document.getElementById("overlay").style.display="block";
+}
 function Hide(){
     var x;
          x=document.getElementById('task-name').value = '';
@@ -21,20 +36,21 @@ function Hide(){
     y=document.getElementById("create-new-task-block").style.display="none";
     y=document.getElementById("overlay").style.display="none";
 }
+function editTask(){
+  var y;
+  y=document.getElementById('task-name').value = '';
+  y=document.getElementById('task-description').value = '';
+  y=document.getElementById('task-status').value = '';
+  
+}
+/*.............*/
 function delete_task(el){
    /*var divId = document.getElementById('todo');*/
     var childId = document.getElementById(el); 
 		/*divId.removeChild(childId);*/
         childId.parentNode.removeChild(childId);
       }
-/*ADD NEW BOARD
-function HideBoard(){
-    var y ;
-    
-    y=document.getElementById("create-new-board").style.display="none";
-    y=document.getElementById("overlay").style.display="none";
 
-}*/
 
 function openmenu(){
     var z;
@@ -51,8 +67,6 @@ function closemenu(){
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
-
-
 // const dragtask = document.querySelector('.task');
 // const block = document.getElementsByClassName('kanban-block');
 
@@ -140,13 +154,67 @@ function pushData()
          var y ;
     
     y=document.getElementById("create-new-task-block").style.display="none";
-    y=document.getElementById("overlay").style.display="none";
-        
+    y=document.getElementById("overlay").style.display="none";  
     }
     
     }
    
-        // append data to the array
+      
+     
+} 
+/* ADD NEW BOARD*/
+function pushBoard(){
+  var new_field=[];
+     // get value from the input text
+     var board_name= document.getElementById('board-name').value;
+     new_field.push(board_name);
+     
+     if(board_name.localeCompare("")!=0)
+    { for(i = 0; i < new_field.length; i++)
+      { const el = document.createElement('li');
+      el.setAttribute("disabled", "");
+      el.textContent=new_field[i];
+     
+      var tasklists=document.getElementById("tasklist");
+      var names=document.getElementById("board-name").value;
+      tasklists.innerHTML += `<li draggable="true" ondragstart="drag(event)" id="${names.toLowerCase().split(" ").join("")}"><img src="images/tasklogo.jpg" alt="" class="tasklogo">${names}</li>`
+      editBoard();
+      HideBoard();
+    }
+
+}
+}
+
+
+// Changing name of the board
+
+function openchangetitle(){
+    var x ;
+    
+    x=document.getElementById("changename").style.display="flex";
+    x=document.getElementById("overlay2").style.display="block";
+}
+
+function closechangetitle(){
+    var x ;
+    
+    x=document.getElementById("changename").style.display="none";
+    // x=document.getElementById("overlay").style.display="block";
+}
+
+
+const txt1= document.getElementById('changetitle');
+
+const title1= document.getElementById('task_title');
+
+function newchange(){
+  title1.innerHTML=txt1.value;
+  var x ;
+x=document.getElementById("changename").style.display="none";
+x=document.getElementById("myDropdown").style.display="none";
+  // x=document.getElementById("overlay").style.display="block";
+}
+  // append data to the array
      
     
     
@@ -189,110 +257,3 @@ source.addEventListener("dragend", (event) => {
   // reset the transparency
   event.target.classList.remove("dragging");
 });*/
-     
-} 
-/* ADD NEW BOARD
-function pushBoard(){
-
-    var new_field=[];
-     // get value from the input text
-     var board_name = document.getElementById('board-name').value;
-     // append data to the array
-     new_field.push(board_name);
-     if(board_name.localeCompare("")!=0)
-    {for(i = 0; i < new_field.length; i++)
-     {
-         
-        const el = document.createElement('li');
-        
-         el.setAttribute("class","tasklist li");
-         el.setAttribute("disabled", "");
-         var t = document.createTextNode(new_field[i]);
-         el.appendChild(t);
-         document.getElementById("tasklist").appendChild(el);
-         
-           /* var board_list = document.getElementById("tasklist");
-            var taskName = document.getElementById("board-name").value;
-            todo.innerHTML += `<div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
-                <span>${taskName}</span>
-            </div>
-            `
-             */
-         /*const image=document.createElement('img');
-         image.setAttribute("class","tasklogo");
-         image.setAttribute("src","images/tasklogo.jpg")
-         document.getElementById("tasklist").appendChild(image);
-         }
-    var x;
-    x=document.getElementById('board_name').value = '';
-    var y ;
-
-y=document.getElementById("create-new-board").style.display="none";
-y=document.getElementById("overlay").style.display="none";
-   
-}*/
- function editTask(){
-    var y;
-    y=document.getElementById('task-name').value = '';
-    y=document.getElementById('task-description').value = '';
-    y=document.getElementById('task-status').value = '';
-    
- }
- /*
- ADD NEW BOARD
- function editBoard(){
-    var y;
-    y=document.getElementById('board-name').value = '';
-    
- }*/
-
-
-/*function saveTask(){
-    // var saveButton = document.getElementById("save-button");
-    // var editButton = document.getElementById("edit-button");
-    // if (saveButton.style.display === "none") {
-    //     saveButton.style.display = "block";
-    //     editButton.style.display = "none";
-    // } else{
-    //     saveButton.style.display = "none";
-    //     editButton.style.display = "block";
-    // }
-
-    var todo = document.getElementById("todo");
-    var taskName = document.getElementById("task-name").value;
-    todo.innerHTML += `
-    <div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
-        <span>${taskName}</span>
-    </div>
-    `
-}*/
-
-
-// Changing name of the board
-
-function openchangetitle(){
-    var x ;
-    
-    x=document.getElementById("changename").style.display="flex";
-    x=document.getElementById("overlay2").style.display="block";
-}
-
-function closechangetitle(){
-    var x ;
-    
-    x=document.getElementById("changename").style.display="none";
-    // x=document.getElementById("overlay").style.display="block";
-}
-
-
-const txt1= document.getElementById('changetitle');
-
-const title1= document.getElementById('task_title');
-
-function newchange(){
-  title1.innerHTML=txt1.value;
-  var x ;
-x=document.getElementById("changename").style.display="none";
-x=document.getElementById("myDropdown").style.display="none";
-  // x=document.getElementById("overlay").style.display="block";
-}

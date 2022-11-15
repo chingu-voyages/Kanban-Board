@@ -13,16 +13,17 @@
   <div class="leftpanel">
     <img src="images/logo.png" alt="" class="logo">
     <div class="title"> Kanban </div>
+    <!--ADD NEW BOARD FEATURE-->
+    <button class="add_new_board" onclick="Show_board()" type="button">+ Add New Board</button>
     <div class="allboards">All Boards</div>
-    <ul class="tasklist" id="tasklist">
-      <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Website Making</li>
-      <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Roadmap</li>
-      <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
-      <li><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
+    <ul class="tasklist scrollable-element" id="tasklist" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <li draggable="true" ondragstart="drag(event)"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Website Making</li>
+      <li draggable="true" ondragstart="drag(event)"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Roadmap</li>
+      <li draggable="true" ondragstart="drag(event)"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
+      <li draggable="true" ondragstart="drag(event)"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li>
+      
     </ul>
-    <!--ADD NEW BOARD FEATURE
-    <button class="add_new_board" onclick="Show_board()">+ Add New Board</button>-->
-  </div>
+    </div>
 
   <div class="horizontal">
   </div>
@@ -132,24 +133,24 @@
             </span>
         </div>
     </form>
-
-    <!--ADD NEW BOARD 
-        <form id="overlay">
+    
+    <!--ADD NEW BOARD -->
+        <form id="overlay1">
         <div  id="create-new-board">
-            <strong style="position:relative; left: 19vw;">New Board</strong>
+            <strong>New Board</strong>
     
             <span class="form-row">
-                <label class="form-row-label" for="board-name" style="position:relative; left: 11vw;">Board name</label>
+                <label class="form-row-label" for="board-name">Board name</label>
                 <input class="form-row-input" type="text" name="board-name" id="board-name" style="position:relative; left: 11vw;" required/>
             </span>
             <br>
             <span class="form-row-buttons">
-                <button id="edit-button" onclick="editBoard();">Clear</span>
+                <button id="edit-button" type="button" onclick="editBoard();">Clear</span>
                     <button id="save-button" onclick="pushBoard();">Save</span>
-                    <button id="cancel-button" onclick="HideBoard()">Cancel</span>
+                    <button id="cancel-button" type="button" onclick="HideBoard()">Cancel</span>
             </span>
             </div>
-    </form>-->
+    </form>
 
         <div class="overlay">
             <div id="changename" >
