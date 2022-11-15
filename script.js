@@ -177,7 +177,7 @@ function pushBoard(){
      
       var tasklists=document.getElementById("tasklist");
       var names=document.getElementById("board-name").value;
-      tasklists.innerHTML += `<li draggable="true" ondragstart="drag(event)" id="${names.toLowerCase().split(" ").join("")}"><img src="images/tasklogo.jpg" alt="" class="tasklogo">${names}</li>`
+      tasklists.innerHTML += `<li draggable="true" ondragstart="drag(event)" tabindex="1" id="${names.toLowerCase().split(" ").join("")}"><img src="images/tasklogo.jpg" alt="" class="tasklogo">${names}</li>`
       editBoard();
       HideBoard();
     }

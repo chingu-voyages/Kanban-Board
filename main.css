@@ -76,6 +76,16 @@
   border-radius: 5px;
   left:2vw;
 }
+.tasklist li:active{
+  background-color: #c79319;
+  border-radius: 5px;
+  left:2vw;
+}
+.tasklist li:focus{
+  background-color: #c79319;
+  border-radius: 5px;
+  left:2vw;
+}
 
 .top_panel{
   background-color:  #33334d;
