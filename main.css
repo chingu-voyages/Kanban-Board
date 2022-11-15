@@ -61,21 +61,7 @@
   padding:1vw;
   overflow-y:hidden;
 }
-.tasklist::-webkit-scrollbar {
-  width: 11px;
-}
-.tasklist {
-  scrollbar-width: thin;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-}
-.tasklist::-webkit-scrollbar-track {
-  background: var(--scrollbarBG);
-}
-.tasklist::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG) ;
-  border-radius: 6px;
-  border: 3px solid var(--scrollbarBG);
-}
+
 .tasklist li{
   color: white;
   padding:1.3vh;
