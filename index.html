@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body >
+
+
  <div class="homepage">
-    
+    <!-- LEFT PANEL -->
   <div class="leftpanel" id="leftpanel">
     <img src="images/logo.png" alt="" class="logo">
     <div class="title"> Kanban </div>
-    <!--ADD NEW BOARD FEATURE-->
+    <!--ADD NEW BOARD -->
     <button class="add_new_board" onclick="Show_board()" type="button">+ Add New Board</button>
     <div class="allboards">All Boards</div>
     <ul class="tasklist"  id="tasklist" ondrop="drop(event)" ondragover="allowDrop(event)">
       <li draggable="true" tabindex="1" ondragstart="drag(event)" class="dragboard" id="boards"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Website Making</li>
       <li draggable="true" tabindex="1" ondragstart="drag(event)" class="dragboard" id="boards"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Roadmap</li>
       <li draggable="true" tabindex="1" ondragstart="drag(event)" class="dragboard" id="boards"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> 
-      <!-- <li draggable="true" tabindex="1" ondragstart="drag(event)" class="dragboard" id="boards"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li> -->
-      
     </ul>
     <button onclick="darkmode()" id="darkmode">Dark Mode Toggle</button>
 </div>
+
+
 
   <div class="horizontal">
   </div>
 
   <div class="vertical">  
   </div>
+
+  <!-- TOP PANEL -->
 
   <div class="top_panel" id="top_panel">
       <div class="task_title" id="task_title">TASKS</div>
@@ -49,16 +53,17 @@
             <a onclick="openchangetitle()" >Edit</a><span onclick="closemenu()" >x</span>
             
           </div>
-        
-      
-      </div>
-      
+
+      </div>  
       
   </div>
+
+  <!-- MAIN BOX -->
 
   <div class="box" id="box">
        
     <div class="kanban-board">
+        <!-- TO DO -->
       <div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)" >
           <strong>To Do</strong>
 
@@ -75,10 +80,10 @@
           <div class="task" id="task3" draggable="true" ondragstart="drag(event)">
             <span>Task 3</span>
             <img src="images/closebutton.png" class="closebutton2" id="task3" onclick="delete_task(this.id)">
-        </div>
-        </div>
+          </div>
+     </div>
 
-
+       <!-- IN PROGRESS -->
       <div class="kanban-block" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
           <strong>In Progress</strong>
           <div class="task" id="task4" draggable="true" ondragstart="drag(event)">
@@ -92,6 +97,8 @@
 
       </div>
 
+      <!-- DONE -->
+
       <div class="kanban-block" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
           <strong>Done</strong>
           
@@ -101,7 +108,7 @@
         </div>
       </div>
 
-      
+      <!-- CREATE NEW TASK DIALOGUE BOX -->
       <form id="overlay">
         <div  id="create-new-task-block">
             <strong>New Task</strong>
@@ -135,7 +142,7 @@
         </div>
     </form>
     
-    <!--ADD NEW BOARD -->
+    <!--ADD NEW BOARD DIALOGUE BOX -->
         <form id="overlay1">
         <div  id="create-new-board">
             <strong>New Board</strong>
@@ -152,6 +159,8 @@
             </span>
             </div>
     </form>
+
+    <!-- CHANGE BOARD NAME POPUP -->
 
         <div class="overlay">
             <div id="changename" >
