@@ -27,6 +27,8 @@ function delete_task(el){
 		/*divId.removeChild(childId);*/
         childId.parentNode.removeChild(childId);
       }
+
+      
 /*ADD NEW BOARD
 function HideBoard(){
     var y ;
@@ -231,23 +233,23 @@ y=document.getElementById("create-new-board").style.display="none";
 y=document.getElementById("overlay").style.display="none";
    
 }*/
- function editTask(){
-    var y;
-    y=document.getElementById('task-name').value = '';
-    y=document.getElementById('task-description').value = '';
-    y=document.getElementById('task-status').value = '';
+//  function editTask(){
+//     var y;
+//     y=document.getElementById('task-name').value = '';
+//     y=document.getElementById('task-description').value = '';
+//     y=document.getElementById('task-status').value = '';
     
- }
- /*
- ADD NEW BOARD
- function editBoard(){
-    var y;
-    y=document.getElementById('board-name').value = '';
+//  }
+ 
+//  ADD NEW BOARD
+//  function editBoard(){
+//     var y;
+//     y=document.getElementById('board-name').value = '';
     
- }*/
+//  }
 
 
-/*function saveTask(){
+// function saveTask(){
     // var saveButton = document.getElementById("save-button");
     // var editButton = document.getElementById("edit-button");
     // if (saveButton.style.display === "none") {
@@ -258,14 +260,14 @@ y=document.getElementById("overlay").style.display="none";
     //     editButton.style.display = "block";
     // }
 
-    var todo = document.getElementById("todo");
-    var taskName = document.getElementById("task-name").value;
-    todo.innerHTML += `
-    <div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
-        <span>${taskName}</span>
-    </div>
-    `
-}*/
+//     var todo = document.getElementById("todo");
+//     var taskName = document.getElementById("task-name").value;
+//     todo.innerHTML += `
+//     <div class="task" id="${taskName.toLowerCase().split(" ").join("")}" draggable="true" ondragstart="drag(event)">
+//         <span>${taskName}</span>
+//     </div>
+//     `
+// }
 
 /*------------------------------ */
 
@@ -325,6 +327,8 @@ function darkmode() {
 
 /*------------------------------ */
 
+// BOARD REORDER FEATURE
+
 let items = document.querySelectorAll('#boards > li')
 
 items.forEach(item => {
@@ -364,3 +368,5 @@ function cancelDefault (e) {
   e.stopPropagation()
   return false
 }
+
+/*------------------------------ */

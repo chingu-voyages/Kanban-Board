@@ -82,7 +82,7 @@
   left:2vw;
 }
 .tasklist li:focus{
-  background-color: #c79319;
+  background-color: #3b1f47;
   border-radius: 5px;
   left:2vw;
 }
@@ -675,3 +675,9 @@
 }
 
 /*--------------------------------------------*/
+
+/* @media(max-width:998rem){
+  html{
+    font-size: 55%;
+  }
+} */
