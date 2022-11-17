@@ -1,3 +1,43 @@
+
+function Show_board(){
+  var x ;
+  
+  x=document.getElementById("create-new-board").style.display="flex";
+  x=document.getElementById("overlay1").style.display="block";
+}
+function HideBoard(){
+var y ;
+
+y=document.getElementById("create-new-board").style.display="none";
+y=document.getElementById("overlay1").style.display="none";
+
+}
+function editBoard(){
+var y;
+y=document.getElementById('board-name').value = '';
+
+}
+function pushBoard(){
+  var new_field=[];
+     // get value from the input text
+     var board_name= document.getElementById('board-name').value;
+     new_field.push(board_name);
+     
+     if(board_name.localeCompare("")!=0)
+    { for(i = 0; i < new_field.length; i++)
+      { const el = document.createElement('li');
+      el.setAttribute("disabled", "");
+      el.textContent=new_field[i];
+     
+      var tasklists=document.getElementById("tasklist");
+      var names=document.getElementById("board-name").value;
+      tasklists.innerHTML += `<li draggable="true" tabindex="1" ondragstart="drag(event)" id="${names.toLowerCase().split(" ").join("")}"><img src="images/tasklogo.jpg" alt="" class="tasklogo">${names}</li>`
+      editBoard();
+      HideBoard();
+    }
+
+}
+}
 function Show(){
     var x ;
     
