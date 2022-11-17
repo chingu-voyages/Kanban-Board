@@ -10,7 +10,7 @@
 <body >
  <div class="homepage">
     
-  <div class="leftpanel">
+  <div class="leftpanel" id="leftpanel">
     <img src="images/logo.png" alt="" class="logo">
     <div class="title"> Kanban </div>
     <!--ADD NEW BOARD FEATURE-->
@@ -23,7 +23,8 @@
       <li draggable="true" tabindex="1" ondragstart="drag(event)"><img src="images/tasklogo.jpg" alt="" class="tasklogo">Marketing Plan</li>
       
     </ul>
-    </div>
+    <button onclick="darkmode()" id="darkmode">Dark Mode Toggle</button>
+</div>
 
   <div class="horizontal">
   </div>
@@ -31,7 +32,7 @@
   <div class="vertical">  
   </div>
 
-  <div class="top_panel">
+  <div class="top_panel" id="top_panel">
       <div class="task_title" id="task_title">TASKS</div>
       <button class="add" onclick="Show()">+ Add New Tasks</button>
       
@@ -55,7 +56,7 @@
       
   </div>
 
-  <div class="box">
+  <div class="box" id="box">
        
     <div class="kanban-board">
       <div class="kanban-block" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)" >
