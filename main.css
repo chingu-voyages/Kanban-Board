@@ -658,7 +658,7 @@
   #darkmode{
     position: absolute;
    bottom: 5vh;
-   right: 10vh;
+   right: 50vh;
   }
 }
 @media (min-height: 230px) and (max-height: 290px) {
