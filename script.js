@@ -172,6 +172,13 @@ function pushData()
     }
    
 } 
+function editTask(){
+  var y;
+  y=document.getElementById('task-name').value = '';
+  y=document.getElementById('task-description').value = '';
+  y=document.getElementById('task-status').value = '';
+  
+}
 
 /*------------------------------ */
 
