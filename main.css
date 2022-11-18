@@ -151,12 +151,6 @@
   cursor: pointer;
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
-  
-}
-
 .toppaneldarkmode{
   background-color: black;
 }
