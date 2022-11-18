@@ -126,7 +126,7 @@
                 <label class="form-row-label" for="task-name">Status</label>
                 <select class="form-row-input" name="task-status" id="task-status" style="min-height:2vh;" required>
                     <optgroup style="font-size: min(0.9vw,5.1vh);">
-                    <option value="" disabled selected hidden style="font-size: min(0.9vw,5.1vh);">Please select</option>
+                    <option value=""disabled selected hidden style="font-size: min(0.9vw,5.1vh);">Please select</option>
                     <option value="todo">To Do</option>
                     <option value="inprogress">In Progress</option>
                     <option value="done">Done</option>
@@ -135,8 +135,8 @@
                 </select>
             </span>
             <span class="form-row-buttons">
-                <button id="edit-button" onclick="editTask();">Clear</span>
-                <button id="save-button" onclick="pushData();">Save</span>
+                <button type="button" id="edit-button" onclick="editTask();">Clear</span>
+                <button type="button" id="save-button" onclick="pushData();">Save</span>
                 <button id="cancel-button" onclick="Hide()">Cancel</span>
             </span>
         </div>
