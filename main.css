@@ -150,11 +150,6 @@
   left: 60px;
   cursor: pointer;
 }
-
-.toppaneldarkmode{
-  background-color: black;
-}
-
 @media (min-height: 290px) and (max-height: 350px) {
   #darkmode{
     position: absolute;

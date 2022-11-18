@@ -216,23 +216,19 @@ function newchange(){
 
 // DARK MODE TOGGLE
 
-
+var t=0;
 function darkmode() {
-  // var element=document.body;
-  // element.classList.toggle("dark-mode");
-
-  var x;
-  // for top panel
-  x=document.getElementById("top_panel");
-  x.classList.toggle("toppaneldarkmode");
-
-  // for left panel
-  x=document.getElementById("leftpanel");
-  x.classList.toggle("toppaneldarkmode");
-
-  // for main box
-  x=document.getElementById("box");
-  x.classList.toggle("toppaneldarkmode");
+ t=t+1;
+  if(t%2!=0)
+  {x=document.getElementById('box').style.backgroundColor = 'black';
+  x=document.getElementById('top_panel').style.backgroundColor = 'black';
+  x=document.getElementById('leftpanel').style.backgroundColor = 'black';
+}
+else{
+  x=document.getElementById('box').style.backgroundColor = '#22262a';
+  x=document.getElementById('top_panel').style.backgroundColor = '#33334d';
+  x=document.getElementById('leftpanel').style.backgroundColor = '#33334d';
+}
   
 }
 
