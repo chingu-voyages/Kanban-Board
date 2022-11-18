@@ -29,7 +29,7 @@ This allows users to
 
 * Clone this repository and start live server.
 * Click on this link: 
- https://jocular-lollipop-4ea6ff.netlify.app/
+ https://effulgent-moxie-7b7eb8.netlify.app/
 
 
 
